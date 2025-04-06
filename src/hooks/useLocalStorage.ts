@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
+import Notes from '../types/NotesType'
 
-const useLocalStorage = (key, defaultValue) => {
+// When typing an array of objects, one can also use the Array<Notes> notation!
+const useLocalStorage = (key: string, defaultValue: Notes[]) => {
   const [value, setValue] = useState(() => {
     let currentValue
 
