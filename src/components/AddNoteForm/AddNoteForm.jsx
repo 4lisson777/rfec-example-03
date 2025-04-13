@@ -10,7 +10,10 @@ const AddNoteForm = ({ onClose, onAdd }) => {
 
     const newNote = {
       title: event.target.noteTitle.value,
-      content: event.target.noteContent.value
+      content: event.target.noteContent.value,
+      isFavorited: false,
+      createdAt: new Date(),
+      updatedAt: new Date()
     }
 
     onAdd(newNote)

@@ -1,6 +1,9 @@
 import styles from './notedate.module.css'
 
 function formatDate(date) {
+  if (!date) return '-'
+
+  date = new Date(date)
   const options = {
     day: '2-digit',
     month: 'long',
@@ -10,7 +13,7 @@ function formatDate(date) {
   return formattedDate
 }
 
-const NoteDate = ({ size, date = new Date() }) => {
+const NoteDate = ({ size, date }) => {
   return (
     <span className={`${styles.noteDate} ${styles[size]}`}>
       {formatDate(date)}
