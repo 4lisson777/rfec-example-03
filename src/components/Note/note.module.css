@@ -1,5 +1,5 @@
 .note {
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   box-shadow: 0 0 2px var(--overlay);
   padding: var(--size-sm);
   display: flex;
