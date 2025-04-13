@@ -1,0 +1,11 @@
+.noteDate {
+  color: var(--gray-400);
+}
+
+.sm {
+  font-size: var(--size-sm);
+}
+
+.md {
+  font-size: var(--size-md);
+}
