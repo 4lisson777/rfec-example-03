@@ -4,11 +4,11 @@
 }
 
 .h2 {
-  font-size: var(--size-lg);
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .h3 {
-  font-size: var(--size-md);
+  font-size: 2rem;
   font-weight: bold;
 }
