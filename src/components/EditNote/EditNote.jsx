@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Button from '../Button/Button'
 import EditNoteForm from '../EditNoteForm/EditNoteForm'
+import { BiEdit } from 'react-icons/bi'
 
 const EditNote = ({ notes, setNotes, uuid }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,8 +28,8 @@ const EditNote = ({ notes, setNotes, uuid }) => {
 
   return (
     <>
-      <Button variant="edit" onClick={handleClick}>
-        Edit
+      <Button variant="iconButton" onClick={handleClick}>
+        <BiEdit size={20} />
       </Button>
       {isOpen ? (
         <EditNoteForm
