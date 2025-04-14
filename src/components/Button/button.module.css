@@ -6,58 +6,52 @@
   margin: 0;
   font-family: inherit;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
 .primary {
-  background-color: var(--blue-100);
-  color: var(--white);
-  padding: var(--size-sm) var(--size-md);
-  border-radius: var(--radius);
+  color: var(--gray-300);
+  border: 1px solid var(--gray-200);
+  padding: var(--size-xxs) var(--size-sm);
+  border-radius: var(--radius-md);
   font-size: var(--size-md);
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .primary:hover,
-.primary:active {
-  background-color: var(--blue-200);
+.primary:active,
+.primary.active {
+  background-color: var(--blue-100);
+  color: var(--white);
 }
 
 .secondary {
   background-color: var(--gray-300);
   color: var(--white);
-  padding: var(--size-sm) var(--size-md);
-  border-radius: var(--radius);
+  padding: var(--size-xxs) var(--size-sm);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
   font-size: var(--size-md);
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .secondary:hover,
 .secondary:active {
   background-color: var(--gray-500);
+  border-color: var(--gray-500);
 }
 
-.edit {
-  background-color: var(--white);
-  color: var(--blue-100);
-  font-size: var(--size-sm);
-  font-weight: 400;
+.iconButton {
+  padding: var(--size-xxs);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.edit:hover,
-.edit:active {
-  color: var(--blue-200);
-}
-
-.delete {
-  background-color: var(--white);
-  color: var(--red-100);
-  font-size: var(--size-sm);
-  font-weight: 400;
-}
-
-.delete:hover,
-.delete:active {
-  color: var(--red-200);
+.iconButton:hover,
+.iconButton:active {
+  background-color: var(--gray-100);
 }
 
 .fullWidth {
