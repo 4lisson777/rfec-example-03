@@ -11,7 +11,10 @@ const EditNoteForm = ({ onClose, onEdit, editingNote }) => {
     const editedNote = {
       uuid: editingNote.uuid,
       title: event.target.noteTitle.value,
-      content: event.target.noteContent.value
+      content: event.target.noteContent.value,
+      isFavorited: editingNote.isFavorited,
+      createdAt: editingNote.createdAt || new Date(),
+      updatedAt: new Date()
     }
 
     onEdit(editedNote)
