@@ -1,0 +1,27 @@
+.form label {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 12px;
+  border-radius: var(--radius-lg);
+  background-color: var(--gray-50);
+  color: var(--blue-50);
+  font-size: var(--size-md);
+}
+
+.form input {
+  background-color: inherit;
+  color: inherit;
+}
+
+.form input::placeholder {
+  color: inherit;
+}
+
+.form input:focus-visible {
+  outline: none;
+}
+
+.form input:focus {
+  border: none;
+}
