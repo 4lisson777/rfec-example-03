@@ -1,7 +1,7 @@
 import Note from '../Note/Note'
 import styles from './notes.module.css'
 
-const Notes = ({ notes, setNotes }) => {
+const Notes = ({ filteredNotes, notes, setNotes }) => {
   function handleDeleteNote(uuid) {
     const filteredNotes = notes.filter((note) => note.uuid !== uuid)
     setNotes(filteredNotes)
@@ -9,8 +9,8 @@ const Notes = ({ notes, setNotes }) => {
 
   return (
     <div className={styles.container}>
-      {notes.length ? (
-        notes.map((note) => {
+      {filteredNotes.length ? (
+        filteredNotes.map((note) => {
           return (
             <Note
               key={note.uuid}
